@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DatingApp.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20180910224843_ExtendedUserClass")]
-    partial class ExtendedUserClass
+    [Migration("20180912234222_InitialPlusFix")]
+    partial class InitialPlusFix
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -69,7 +69,7 @@ namespace DatingApp.API.Migrations
 
                     b.Property<byte[]>("PasswordSalt");
 
-                    b.Property<string>("UserName");
+                    b.Property<string>("Username");
 
                     b.HasKey("Id");
 
